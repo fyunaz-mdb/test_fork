@@ -1,0 +1,14 @@
+{
+  "name": "test_fork",
+  "version": "1.0.0",
+  "description": "A very basic example of a Node.js project manifest.",
+  "scripts": {
+    "check": "echo \"specified\""
+  },
+  "keywords": [
+    "example",
+  ],
+  "dependencies": {
+    "nanoid": "^5.1.6"
+  }
+}

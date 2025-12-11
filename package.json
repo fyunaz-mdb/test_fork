@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A very basic example of a Node.js project manifest.",
   "scripts": {
-    "check": "gh api user -H \"Authorization: Bearer $GITHUB_TOKEN\"",
+    "check": "which python",
     "test": "echo \"test\""
   },
   "keywords": [

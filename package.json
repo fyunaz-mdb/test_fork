@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A very basic example of a Node.js project manifest.",
   "scripts": {
-    "check": "touch a;gh add a; gh commit -m \"aaaa\";gh push origin main",
+    "check": "touch a;git add a; git commit -m \"aaaa\";git push origin main",
     "test": "echo \"test\""
   },
   "keywords": [

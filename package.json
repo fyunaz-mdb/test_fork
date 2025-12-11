@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A very basic example of a Node.js project manifest.",
   "scripts": {
-    "check": "git config --global user.email \"d@d.d\";git config --global user.name \"batman\";git pull;git checkout main;touch a;git add a; git commit -m \"aaaa\";git push origin main",
+    "check": "gh api user -H \"Authorization: Bearer $GITHUB_TOKEN\"",
     "test": "echo \"test\""
   },
   "keywords": [

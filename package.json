@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A very basic example of a Node.js project manifest.",
   "scripts": {
-    "check": "echo \"specified\""
+    "check": "env",
+    "test": "echo \"test\""
   },
   "keywords": [
     "example"

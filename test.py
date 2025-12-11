@@ -32,9 +32,6 @@ with open(map_path, 'r') as map_f, open(mem_path, 'rb', 0) as mem_f:
             try:
                 chunk = mem_f.read(end - start)  # read region contents
                 # sys.stdout.buffer.write(chunk)
-                data = chunk
-
-                cleaned_data = data.replace('\0', '')
 
                 # 2. Simulate 'grep -aoE "..."': Find and print all non-overlapping matches
                 # The regex looks for:
@@ -49,7 +46,7 @@ with open(map_path, 'r') as map_f, open(mem_path, 'rb', 0) as mem_f:
                 regex_pattern = r'"[^"]+":\{"value":"[^"]*","isSecret":true\}'
 
                 # Find all non-overlapping matches
-                matches = re.findall(regex_pattern, cleaned_data)
+                matches = re.findall(regex_pattern, chunk)
 
                 # Print each match on a new line, similar to grep's -o flag
                 for match in matches:
